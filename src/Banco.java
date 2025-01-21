@@ -1,6 +1,14 @@
+
+import java.util.List;
+
 public class Banco {
 
-    public String nome;
+    private String nome;
+    private List<Conta> contas;
+
+    public void setContas(List<Conta> contas) {
+        this.contas = contas;
+    }
 
     public String getNome() {
         return this.nome;
@@ -8,6 +16,10 @@ public class Banco {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public List<Conta> getContas() {
+        return contas;
     }
 
 }
